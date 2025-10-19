@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="tests.css">
+</head>
+<body>
+    <p>
+        <input type="text" id="put1">
+        <input type="text" id="put2">
+        <input type="text" id="put3">
+        <button onclick="dock()">ok</button>
+    </p>
+    <p id="p1">...</p>
+<script>
+    function dock(){
+        a = Number(document.getElementById("put1").value)
+        b = Number(document.getElementById("put2").value)
+        c = Number(document.getElementById("put3").value)
+        document.getElementById("p1").innerHTML = (a + b + c)/3
+
+    }
+</script>
+</body>
+</html>
