@@ -1,73 +1,100 @@
 body {
-    background-color:#EFE4D2;
+  font-family: "Vazirmatn", sans-serif;
+  background-color: #f8f9fa;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
 }
 
-.div1{
-    
-    margin-left: auto;
-    width: 140px;
-    background-color:#211832;
-    color: aliceblue;
-    padding: 10px;
-    border: 2px solid rebeccapurple;
-    border-radius: 20px;
-    text-align: center;
-}
-.div2{
-    text-align: center;
-    margin-left: auto;
-    width: 90px;
-    background-color: #211832;
-    margin-right: 3px;
-    border-radius: 20px;
-    border: 2px solid rebeccapurple;
-    margin-top: 2px;
-    color: aliceblue;
+.container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.div3{
-    background-color: #211832;
-    padding: 10px;
-    border-radius: 20px;
+.header-box {
+  background-color: #e3f2fd;
+  border: 2px solid #0288d1;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 300px;
 }
-.div4 img{
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
-.div4{
-    background-color:#5C3E94;
-    padding: 1px;
-    margin-top: 20px;
-    border-radius: 60px;
-    height: 110px;
+
+.video-type-btn {
+  border: none;
+  background-color: #90caf9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
-.div5 img{
-    width: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.video-type-btn.active {
+  background-color: #0288d1;
+  color: white;
 }
-.div5{
-    background-color: #5C3E94;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 1px;
-    border-radius: 60px;
-    height: 110px;
+
+.confirm-btn {
+  margin-top: 15px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
-.a1{
-    color:aqua;
-    text-decoration: none;
+
+.content-area {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
 }
-.a2{
-    color: aqua;
-    text-decoration: none;
+
+/* چون الان می‌خوای لیست سمت چپ و پخش‌کننده سمت راست باشه */
+.video-list {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.video-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.video-item:hover {
+  background-color: #f0f0f0;
+}
+
+.video-player {
+  width: 65%;
+  background-color: #000;
+  border-radius: 8px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
