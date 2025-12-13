@@ -1,6 +1,6 @@
 body {
   font-family: "Vazirmatn", sans-serif;
-  background-color: #f8f9fa;
+  background-color: #889399;
   direction: rtl;
   margin: 0;
   padding: 0;
@@ -15,8 +15,8 @@ body {
 }
 
 .header-box {
-  background-color: #e3f2fd;
-  border: 2px solid #0288d1;
+  background-color: #1c5f5098;
+  border: 2px solid #0aaa12;
   border-radius: 8px;
   padding: 10px 20px;
   font-size: 18px;
@@ -66,7 +66,6 @@ body {
   justify-content: space-between;
 }
 
-/* چون الان می‌خوای لیست سمت چپ و پخش‌کننده سمت راست باشه */
 .video-list {
   width: 30%;
   border: 1px solid #ccc;
